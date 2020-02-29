@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
+    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/passportService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/passportService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582976126532</updated>
-      <workItem from="1582976127926" duration="4335000" />
+      <workItem from="1582976127926" duration="4517000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1582976349811</created>
@@ -70,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582981759064</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1582981778507</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582981778507</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,11 +94,11 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1680" y="397" key="#Menus_and_Toolbars/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976336963" />
-    <state x="-1669" y="318" key="CommitChangelistDialog2" timestamp="1582981758917">
+    <state x="-1669" y="318" key="CommitChangelistDialog2" timestamp="1582981778407">
       <screen x="-2560" y="23" width="2560" height="1348" />
     </state>
     <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976349681" />
-    <state x="-1669" y="318" key="CommitChangelistDialog2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582981758917" />
+    <state x="-1669" y="318" key="CommitChangelistDialog2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582981778407" />
     <state x="-1409" y="632" key="Github.ShareDialog" timestamp="1582976368653">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
