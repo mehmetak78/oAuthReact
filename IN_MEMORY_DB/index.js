@@ -2,13 +2,13 @@
 const DB = {
     USER_TABLE :  [
         {
-            name:"Mehmet",
-            username: "mehmetak78@hotmail.com",
-            password: "$2a$10$ND6GyTO5vuU/BNOXFZwNyupYbX6HirEkZFTu80lTf6AV9UhZpdkDK"
+            id:1,           // will be auto generated if we use mongo
+            googleId:"115843263584676090283"
         }
         ],
     ROLES :  [
         {
+            id:1,
             admin:"Admin",
         }
         ]
