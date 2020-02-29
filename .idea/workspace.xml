@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dev_SAMPLE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +35,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582976126532</updated>
-      <workItem from="1582976127926" duration="10781000" />
+      <workItem from="1582976127926" duration="10856000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1582976349811</created>
@@ -119,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583011614775</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First Commit">
+      <created>1583011634203</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583011634203</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,10 +143,10 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1680" y="397" key="#Menus_and_Toolbars/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976336963" />
-    <state x="-1669" y="333" key="CommitChangelistDialog2" timestamp="1583011614687">
+    <state x="-1669" y="333" key="CommitChangelistDialog2" timestamp="1583011634113">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583011614687" />
+    <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583011634113" />
     <state x="-1669" y="318" key="CommitChangelistDialog2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582982104592" />
     <state x="-1409" y="632" key="Github.ShareDialog" timestamp="1582976368653">
       <screen x="-2560" y="23" width="2560" height="1417" />
