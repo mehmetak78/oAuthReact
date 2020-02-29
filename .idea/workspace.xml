@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/oAuthReact.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/keys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/passportService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1YTopNZdohaqOWApnIqKy6DDPyg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,10 +44,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,17 +67,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582976126532</updated>
-      <workItem from="1582976127926" duration="210000" />
+      <workItem from="1582976127926" duration="4307000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1582976349811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582976349811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1680" y="397" key="#Menus_and_Toolbars" timestamp="1582976336963">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1680" y="397" key="#Menus_and_Toolbars/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976336963" />
+    <state x="-1669" y="318" key="CommitChangelistDialog2" timestamp="1582981734085">
+      <screen x="-2560" y="23" width="2560" height="1348" />
+    </state>
+    <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976349681" />
+    <state x="-1669" y="318" key="CommitChangelistDialog2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582981734085" />
+    <state x="-1409" y="632" key="Github.ShareDialog" timestamp="1582976368653">
+      <screen x="-2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="-1409" y="632" key="Github.ShareDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976368653" />
   </component>
 </project>
