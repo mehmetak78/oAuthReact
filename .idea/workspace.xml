@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" afterDir="false" />
+    <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/config/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/passportService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/passportService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582976126532</updated>
-      <workItem from="1582976127926" duration="10654000" />
+      <workItem from="1582976127926" duration="10781000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1582976349811</created>
@@ -107,7 +98,28 @@
       <option name="project" value="LOCAL" />
       <updated>1582982053877</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First Commit">
+      <created>1583011514926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583011514926</updated>
+    </task>
+    <task id="LOCAL-00008" summary="First Commit">
+      <created>1583011605955</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583011605955</updated>
+    </task>
+    <task id="LOCAL-00009" summary="First Commit">
+      <created>1583011614775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583011614775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,10 +134,10 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1680" y="397" key="#Menus_and_Toolbars/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1582976336963" />
-    <state x="-1669" y="333" key="CommitChangelistDialog2" timestamp="1583011605854">
+    <state x="-1669" y="333" key="CommitChangelistDialog2" timestamp="1583011614687">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583011605854" />
+    <state x="-1669" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583011614687" />
     <state x="-1669" y="318" key="CommitChangelistDialog2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582982104592" />
     <state x="-1409" y="632" key="Github.ShareDialog" timestamp="1582976368653">
       <screen x="-2560" y="23" width="2560" height="1417" />
