@@ -12,8 +12,14 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
+    console.log("deserializeUser" + id);
     const user =  users.find(usr => usr.id === id);
-    done(null, user);
+    if (user) {
+        done(null, user);
+    }
+    else {
+        done(null,null);
+    }
 });
 
 passport.use(new GoogleStrategy({
@@ -23,13 +29,15 @@ passport.use(new GoogleStrategy({
                                     proxy:true
                                 },
                                 (accesToken, refreshToken, profile, done) => {
+                                    console.log("Here.....");
                                     let user =  users.find(usr => usr.googleId === profile.id);
                                     if (user !== undefined) {
                                         return done(null, user);
                                     }
                                     user = {
                                         id:profile.id,
-                                        googleId:profile.id
+                                        googleId:profile.id,
+                                        name:profile.displayName
                                     };
                                     users = [...users, user];
 
