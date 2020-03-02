@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e659467-8a0a-41de-bdc4-c7bfc95abbbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/passportService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/passportService.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,18 +60,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components/routing" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -180,7 +162,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -213,5 +197,9 @@
     </state>
     <state x="-1680" y="458" key="Vcs.Push.Dialog.v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583011527271" />
     <state x="-1680" y="437" key="Vcs.Push.Dialog.v2/0.23.1440.877/-4480.23.1920.1177/-2560.23.2560.1348@-2560.23.2560.1348" timestamp="1582982035584" />
+    <state x="-1600" y="488" width="639" height="486" key="find.popup" timestamp="1583172128553">
+      <screen x="-2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="-1600" y="488" width="639" height="486" key="find.popup/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583172128553" />
   </component>
 </project>

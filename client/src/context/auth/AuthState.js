@@ -1,6 +1,7 @@
-import React, {useReducer} from "react";
+import React, {useReducer, useContext} from "react";
 
-import AuthContext from "./AuthContext";
+import AuthContext from "../../context/auth/AuthContext";
+import AlertContext from "../../context/alert/AlertContext";
 import AuthReducer from "./AuthReducer";
 
 import axios from "axios";
@@ -20,8 +21,10 @@ const AuthState = props => {
     };
 
     const [state, dispatch] = useReducer(AuthReducer, initialState);
+    const alertContext = useContext(AlertContext);
+    const {setAlert} = alertContext;
 
-    // Login User
+    // Login User Google
     const loginUser = async () => {
         try {
             const res = await axios.get("/auth/api/current_user");
@@ -29,10 +32,10 @@ const AuthState = props => {
                 dispatch({type: LOGIN, payload: res.data});
             }
             else {
-                dispatch({type: AUTH_ERROR, payload: res.data})
+                //setAlert(res.data,"danger");
             }
         } catch (e) {
-            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+            setAlert("Unknown Error","danger");
         }
     };
 
@@ -48,22 +51,14 @@ const AuthState = props => {
                 username,
                 password
             }, config);
-
-            console.log("res.data");
-            console.log(res.data);
-
-            if (res.data !== "Not Logged In") {
+            if (res.data.id) {
                 dispatch({type: LOGIN, payload: res.data});
             }
             else {
-                dispatch({type: AUTH_ERROR, payload: res.data})
+                setAlert(res.data,"danger");
             }
         } catch (e) {
-            console.log("cathc");
-            console.log(e.message);
-            console.log(e);
-
-            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+            setAlert("Unknown Error","danger");
         }
     };
 
@@ -81,16 +76,14 @@ const AuthState = props => {
                 name
             }, config);
 
-            console.log(res.data);
-
-            if (res.data !== "User Already Exists") {
+            if (res.data.id ) {
                 dispatch({type: LOGIN, payload: res.data});
             }
             else {
-                dispatch({type: AUTH_ERROR, payload: res.data})
+                setAlert(res.data,"danger");
             }
         } catch (e) {
-            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+            setAlert("Unknown Error","danger");
         }
     };
 
@@ -102,10 +95,10 @@ const AuthState = props => {
                 dispatch({type:LOGOUT});
             }
             else {
-                dispatch({type: AUTH_ERROR, payload: res.data})
+                setAlert(res.data,"danger");
             }
         } catch (e) {
-            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+            setAlert("Unknown Error","danger");
         }
 
     };

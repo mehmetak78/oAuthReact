@@ -14,7 +14,7 @@ router.get("/google", passport.authenticate("google", {scope: ["profile", "email
 
 router.get("/google/callbacknow", passport.authenticate("google"),
            (req,res) => {
-               console.log("Inside the route callbacknow");
+               console.log("Inside the callbacknow");
                res.redirect("/privatehome");
            }
 );
@@ -22,7 +22,6 @@ router.get("/google/callbacknow", passport.authenticate("google"),
 // Local Login
 router.post('/local/login', passport.authenticate('local'),
     (req,res) => {
-        console.log("Inside the Login");
         res.send(req.user);
     }
 );
@@ -33,14 +32,14 @@ router.post("/local/register",
         check("username", "Please include a valid username")
             .not().isEmpty(),
         check("password", "Please enter a password with 3 or more characters")
-            .isLength({min: 2})
+            .isLength({min: 3})
     ],
 
     async (req,res) => {
         let users = DB.USER_TABLE;
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({errors: errors.array()});
+        const result = validationResult(req);
+        if (!result.isEmpty()) {
+            return res.send(result.errors[0].msg);
         }
         const {name,username, password} = req.body;
         try {
@@ -63,14 +62,13 @@ router.post("/local/register",
 
                 req.login( user, function(err) {
                     if (err) {
-                        console.log(err);
+                        res.send("Server Error");
                     }
                     return res.send(user);
                 });
 
             }
         } catch (err) {
-            console.log(err.message);
             res.send("Server Error");
         }
 

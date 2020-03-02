@@ -7,7 +7,13 @@ const bcrypt = require("bcryptjs");
 const DB = require("../IN_MEMORY_DB");
 
 passport.serializeUser((user, done) => {
-    done(null, user.id);
+    console.log("serializeUser-1");
+    if (user.id) {
+        done(null, user.id);
+    }
+    else {
+        done(null, user);
+    }
 });
 
 passport.deserializeUser((id, done) => {
@@ -52,10 +58,10 @@ passport.use(new LocalStrategy(
         if (user) {
             const isMatch = await bcrypt.compare(password, user.password);
             if (!isMatch) {
-                return done(null, false, { message: 'Invalid Credentials.' });
+                return done(null, 'Invalid Password' );
             }
             return done(null, user);
         }
-        return done(null, false, { message: 'Incorrect username.' });
+        return done (null, 'Incorrect Username.');
     }
 ));

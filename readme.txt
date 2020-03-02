@@ -21,7 +21,7 @@ Public Home Page : http://localhost:3000/publicHome  (No login required)
 - Change "package.json"
     Use "server.js" instead of "index.js"
 - Install packages
-    MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install express passport passport-google-oauth20@2 express-validator cookie-session
+    MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install express passport passport-google-oauth20@2 passport-localexpress-validator cookie-session bcryptjs
 - Dev dependencies
     MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install -D nodemon concurrently
 - Add scripts to "package.json"

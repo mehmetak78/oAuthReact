@@ -18,8 +18,8 @@ import Register from "./components/pages/Register";
 
 const App = () => {
   return (
-      <AuthState>
-        <AlertState>
+      <AlertState>
+        <AuthState>
           <Router>
             <Fragment>
               <AppInit/>
@@ -37,8 +37,8 @@ const App = () => {
               </div>
             </Fragment>
           </Router>
-        </AlertState>
-      </AuthState>
+        </AuthState>
+      </AlertState>
   );
 };
 
