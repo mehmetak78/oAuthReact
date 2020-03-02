@@ -3,9 +3,11 @@ const DB = {
     USER_TABLE :  [
         {
             id:1,           // will be auto generated if we use mongo
+            username: "mehmetak78@hotmail.com",
+            password: "$2a$10$9VksmNeABDcAbeKaaomXXOE9LMHVIHBu/5cZaaHLa6mXrsf7NvSN2",
             googleId:"1",
-            name:"Mehmet"
-        }
+            name:"Mehmet",
+        },
         ],
     ROLES :  [
         {

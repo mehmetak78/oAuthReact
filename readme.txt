@@ -13,7 +13,6 @@ To Logout : http://localhost:5000/auth/api/logout
 Private Home Page : http://localhost:3000/privateHome  (You must be logged in)
 Public Home Page : http://localhost:3000/publicHome  (No login required)
 
-
 *************
 
 - Create an empty project called "oAuthReact"
@@ -23,7 +22,6 @@ Public Home Page : http://localhost:3000/publicHome  (No login required)
     Use "server.js" instead of "index.js"
 - Install packages
     MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install express passport passport-google-oauth20@2 express-validator cookie-session
-
 - Dev dependencies
     MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install -D nodemon concurrently
 - Add scripts to "package.json"
@@ -42,10 +40,8 @@ Public Home Page : http://localhost:3000/publicHome  (No login required)
         - MEHMETs-MacBook-Pro:contact-keeper mehmetak$ git add .
     - Commit
         - MEHMETs-MacBook-Pro:contact-keeper mehmetak$ git commit -m "Initial Commit"
-
     - Share in GitHub
         VCS/Import Into Version Control/Share Project in Github
-
 -------- Client
 - ceate react app
     mehmetak@MEHMETs-MacBook-Pro contact-keeper % create-react-app client

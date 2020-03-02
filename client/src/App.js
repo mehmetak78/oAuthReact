@@ -13,6 +13,8 @@ import About from "./components/pages/About";
 import AppInit from "./components/routing/AppInit";
 import PublicRoute from "./components/routing/PublicRoute";
 import PublicHome from "./components/pages/PublicHome.js";
+import Login from "./components/pages/Login";
+import Register from "./components/pages/Register";
 
 const App = () => {
   return (
@@ -26,8 +28,10 @@ const App = () => {
                 <Alerts/>
                 <Switch>
                   <PublicRoute exact path='/publichome' component={PublicHome} />
-                  <PrivateRoute path='/privatehome' component={PrivateHome} />
-                  <Route path='/about' component={About} />
+                  <PrivateRoute exact path='/privatehome' component={PrivateHome} />
+                  <Route exact path='/login' component={Login} />
+                  <Route exact path='/register' component={Register} />
+                  <Route exact path='/about' component={About} />
                   <PrivateRoute exact path='/' component={PrivateHome} />
                 </Switch>
               </div>

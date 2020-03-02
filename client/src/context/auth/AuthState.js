@@ -36,6 +36,64 @@ const AuthState = props => {
         }
     };
 
+    // Local Login User
+    const localLogin = async (username, password) => {
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            const res = await axios.post('/auth/local/login', {
+                username,
+                password
+            }, config);
+
+            console.log("res.data");
+            console.log(res.data);
+
+            if (res.data !== "Not Logged In") {
+                dispatch({type: LOGIN, payload: res.data});
+            }
+            else {
+                dispatch({type: AUTH_ERROR, payload: res.data})
+            }
+        } catch (e) {
+            console.log("cathc");
+            console.log(e.message);
+            console.log(e);
+
+            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+        }
+    };
+
+    // Local Login User
+    const localRegister = async (username, password, name) => {
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            const res = await axios.post('/auth/local/register', {
+                username,
+                password,
+                name
+            }, config);
+
+            console.log(res.data);
+
+            if (res.data !== "User Already Exists") {
+                dispatch({type: LOGIN, payload: res.data});
+            }
+            else {
+                dispatch({type: AUTH_ERROR, payload: res.data})
+            }
+        } catch (e) {
+            dispatch({type: AUTH_ERROR, payload: "Unknown Error"})
+        }
+    };
+
     // Logout User
     const logoutUser = async () => {
         try {
@@ -62,6 +120,8 @@ const AuthState = props => {
                 user: state.user,
                 error: state.error,
                 loginUser,
+                localLogin,
+                localRegister,
                 logoutUser,
                 clearErrors
             }

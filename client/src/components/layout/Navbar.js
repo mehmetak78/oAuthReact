@@ -2,6 +2,7 @@ import React, {Fragment, useContext} from 'react';
 import PropTypes from 'prop-types';
 
 import AuthContext from "../../context/auth/AuthContext";
+import {NavLink} from "react-router-dom";
 
 const Navbar = props => {
     const {title, icon} = props;
@@ -25,8 +26,10 @@ const Navbar = props => {
     const guestLinks = (
         <Fragment>
             <li>
-                <a href="/auth/google">  <i className="fas fa-sign-in-alt"/> <span className="hide-sm"> Login</span></a>
+                <NavLink to="/login"> <i className="fas fa-sign-in-alt"></i> <span className="hide-sm">Login</span></NavLink>
+                <NavLink to="/register"> <i className="fas fa-user-plus"></i> <span className="hide-sm">Register</span></NavLink>
             </li>
+
         </Fragment>
     );
 

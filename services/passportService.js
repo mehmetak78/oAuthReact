@@ -1,18 +1,17 @@
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const LocalStrategy = require('passport-local').Strategy;
+const keys = require("../config/keys");
+const bcrypt = require("bcryptjs");
 
 const DB = require("../IN_MEMORY_DB");
-let users = DB.USER_TABLE;
-
-const keys = require("../config/keys");
 
 passport.serializeUser((user, done) => {
-    console.log(user);
     done(null, user.id);
 });
 
 passport.deserializeUser((id, done) => {
-    console.log("deserializeUser" + id);
+    const users = DB.USER_TABLE;
     const user =  users.find(usr => usr.id === id);
     if (user) {
         done(null, user);
@@ -29,7 +28,7 @@ passport.use(new GoogleStrategy({
                                     proxy:true
                                 },
                                 (accesToken, refreshToken, profile, done) => {
-                                    console.log("Here.....");
+                                    let users = DB.USER_TABLE;
                                     let user =  users.find(usr => usr.googleId === profile.id);
                                     if (user !== undefined) {
                                         return done(null, user);
@@ -40,8 +39,23 @@ passport.use(new GoogleStrategy({
                                         name:profile.displayName
                                     };
                                     users = [...users, user];
+                                    DB.USER_TABLE = users;
 
                                     done(null, user);
                                 }
                                 ));
 
+passport.use(new LocalStrategy(
+    async (username, password, done)=> {
+        let users = DB.USER_TABLE;
+        const user =  users.find(usr => usr.username === username);
+        if (user) {
+            const isMatch = await bcrypt.compare(password, user.password);
+            if (!isMatch) {
+                return done(null, false, { message: 'Invalid Credentials.' });
+            }
+            return done(null, user);
+        }
+        return done(null, false, { message: 'Incorrect username.' });
+    }
+));
