@@ -49,8 +49,14 @@ router.post("/local/register",
                 return res.send("User Already Exists");
               }
             else {
+                const userWithMaxId = users.reduce((a,b) => {
+                    if (a.id>b.id) {
+                        return a;
+                    }
+                    return b;
+                });
                 let user = {
-                    id:2,
+                    id:userWithMaxId.id+1,
                     name,
                     username,
                     password
