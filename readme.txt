@@ -98,3 +98,6 @@ Public Home Page : http://localhost:3000/publicHome  (No login required)
 - Use PubliceRoute for routing the components that will be seen if you are not logged in. Especially important for the home page redirected from the server site after login.
 
 - Didn't use the Alert Context in this sample. See jwtReact sample
+
+
+https://www.digitalocean.com/community/tutorials/api-authentication-with-json-web-tokensjwt-and-passport
