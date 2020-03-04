@@ -2,7 +2,7 @@ const express = require("express");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 
-require("./services/passportService");
+require("./services/passportStrategies");
 const keys = require("./config/keys");
 
 const app = express();

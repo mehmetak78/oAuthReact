@@ -10,11 +10,4 @@ router.get("/adminHome",  requireLogin, (req, res) => {
     res.send("In Admin Home Page");
 });
 
-// Logout
-router.get("/logout", (req, res) => {
-    req.logout();
-    res.send("Logged Out");
-});
-
-
 module.exports = router;

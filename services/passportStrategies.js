@@ -4,12 +4,11 @@ const LocalStrategy = require('passport-local').Strategy;
 const keys = require("../config/keys");
 const bcrypt = require("bcryptjs");
 
-const DB = require("../IN_MEMORY_DB");
+const {insertDB, findByColumn} = require("../IN_MEMORY_DB");
 
 passport.serializeUser((user, done) => {
-    console.log("serializeUser-1");
-    if (user.id) {
-        done(null, user.id);
+    if (user.googleId) {
+        done(null, user.googleId);
     }
     else {
         done(null, user);
@@ -17,8 +16,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
-    const users = DB.USER_TABLE;
-    const user =  users.find(usr => usr.id === id);
+    const user = findByColumn("USER_TABLE","googleId",id);
     if (user) {
         done(null, user);
     }
@@ -34,27 +32,23 @@ passport.use(new GoogleStrategy({
                                     proxy:true
                                 },
                                 (accesToken, refreshToken, profile, done) => {
-                                    let users = DB.USER_TABLE;
-                                    let user =  users.find(usr => usr.googleId === profile.id);
+                                    let user = findByColumn("USER_TABLE","googleId",profile.id);
                                     if (user !== undefined) {
                                         return done(null, user);
                                     }
                                     user = {
-                                        id:profile.id,
                                         googleId:profile.id,
                                         name:profile.displayName
                                     };
-                                    users = [...users, user];
-                                    DB.USER_TABLE = users;
 
+                                    insertDB("USER_TABLE",user);
                                     done(null, user);
                                 }
                                 ));
 
 passport.use(new LocalStrategy(
     async (username, password, done)=> {
-        let users = DB.USER_TABLE;
-        const user =  users.find(usr => usr.username === username);
+        const user = findByColumn("USER_TABLE","username",username);
         if (user) {
             const isMatch = await bcrypt.compare(password, user.password);
             if (!isMatch) {

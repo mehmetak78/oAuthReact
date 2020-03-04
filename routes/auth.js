@@ -4,7 +4,7 @@ const passport = require("passport");
 const bcrypt = require("bcryptjs");
 const {check, validationResult} = require("express-validator/check");
 
-const DB = require("../IN_MEMORY_DB");
+const {insertDB, findByColumn} = require("../IN_MEMORY_DB");
 
 
 // /auth
@@ -34,50 +34,36 @@ router.post("/local/register",
         check("password", "Please enter a password with 3 or more characters")
             .isLength({min: 3})
     ],
-
     async (req,res) => {
-        let users = DB.USER_TABLE;
         const result = validationResult(req);
         if (!result.isEmpty()) {
             return res.send(result.errors[0].msg);
         }
         const {name,username, password} = req.body;
         try {
-            let user = users.find((usr) => usr.username === username);
-
+            const user = findByColumn("USER_TABLE","username",username);
             if (user !== undefined) {
                 return res.send("User Already Exists");
               }
             else {
-                const userWithMaxId = users.reduce((a,b) => {
-                    if (a.id>b.id) {
-                        return a;
-                    }
-                    return b;
-                });
                 let user = {
-                    id:userWithMaxId.id+1,
                     name,
                     username,
                     password
                 };
                 const salt = await bcrypt.genSalt(10);
                 user.password = await bcrypt.hash(password, salt);
-                users = [...users, user];
-                DB.USER_TABLE = users;
-
+                user = insertDB("USER_TABLE",user);
                 req.login( user, function(err) {
                     if (err) {
                         res.send("Server Error");
                     }
                     return res.send(user);
                 });
-
             }
         } catch (err) {
             res.send("Server Error");
         }
-
     });
 
 // Get Current User
